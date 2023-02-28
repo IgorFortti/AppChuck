@@ -11,7 +11,7 @@ import OHHTTPStubs
 
 class HomeServiceTests: XCTestCase {
     
-    var homeService: HomeService?
+    var homeService: HomeService!
 
     override func setUpWithError() throws {
         homeService = HomeService()

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  AppChuck
 //
 //  Created by Igor Fortti on 28/02/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     var screen: ViewControllerScreen?
     var viewModel: HomeViewModel = HomeViewModel(service: HomeService())
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: HomeViewModelProtocol {
+extension HomeViewController: HomeViewModelProtocol {
  
     func success() {
         screen?.configTableViewDelegate(delegate: self, dataSource: self)
@@ -36,9 +36,9 @@ extension ViewController: HomeViewModelProtocol {
     }
 }
 
-extension ViewController: UITableViewDelegate {  }
+extension HomeViewController: UITableViewDelegate {  }
 
-extension ViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRowsInSection
     }
