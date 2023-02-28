@@ -8,31 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
     
+    var screen: ViewControllerScreen?
     var viewModel: HomeViewModel = HomeViewModel(service: HomeService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        screen = ViewControllerScreen()
+        view = screen
         viewModel.delegate(delegate: self)
         viewModel.fetchRequest()
     }
-
-    func configTableView() {
-        tableView.register(CategoryTableViewCell.nib(), forCellReuseIdentifier: CategoryTableViewCell.identifier)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.reloadData()
-    }
-
-
 }
 
 extension ViewController: HomeViewModelProtocol {
  
     func success() {
-        configTableView()
+        screen?.configTableViewDelegate(delegate: self, dataSource: self)
+        screen?.tableView.reloadData()
     }
     
     func error(message: String) {
