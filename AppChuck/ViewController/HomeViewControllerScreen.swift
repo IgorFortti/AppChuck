@@ -1,5 +1,5 @@
 //
-//  ViewControllerScreen.swift
+//  HomeViewControllerScreen.swift
 //  AppChuck
 //
 //  Created by Igor Fortti on 28/02/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewControllerScreen: UIView {
+class HomeViewControllerScreen: UIView {
     
     lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -27,11 +27,6 @@ class ViewControllerScreen: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configTableViewDelegate(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
-        tableView.delegate = delegate
-        tableView.dataSource = dataSource
     }
     
     func addElements() {

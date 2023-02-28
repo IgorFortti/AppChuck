@@ -9,11 +9,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var screen: ViewControllerScreen?
+    var screen: HomeViewControllerScreen = HomeViewControllerScreen()
     var viewModel: HomeViewModel = HomeViewModel(service: HomeService())
     
     override func loadView() {
-        screen = ViewControllerScreen()
         view = screen
     }
     
@@ -22,13 +21,18 @@ class HomeViewController: UIViewController {
         viewModel.delegate(delegate: self)
         viewModel.fetchRequest()
     }
+    
+    func configTableView() {
+        screen.tableView.delegate = self
+        screen.tableView.dataSource = self
+        screen.tableView.reloadData()
+    }
 }
 
 extension HomeViewController: HomeViewModelProtocol {
  
     func success() {
-        screen?.configTableViewDelegate(delegate: self, dataSource: self)
-        screen?.tableView.reloadData()
+        configTableView()
     }
     
     func error(message: String) {

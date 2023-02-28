@@ -11,7 +11,8 @@
 		78AA017FF18281D9FCEC2688 /* Pods_AppChuckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE941C1F67CE1104B11BFE6 /* Pods_AppChuckTests.framework */; };
 		FA4220C129AE93FE0061AE9C /* HomeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220C029AE93FE0061AE9C /* HomeServiceTests.swift */; };
 		FA4220C329AEA0C60061AE9C /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220C229AEA0C60061AE9C /* HomeViewModelTests.swift */; };
-		FA7BE11B29AE575A008FA959 /* ViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BE11A29AE575A008FA959 /* ViewControllerScreen.swift */; };
+		FA4220C529AEAF680061AE9C /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220C429AEAF680061AE9C /* HomeViewControllerTests.swift */; };
+		FA7BE11B29AE575A008FA959 /* HomeViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BE11A29AE575A008FA959 /* HomeViewControllerScreen.swift */; };
 		FA7BE11D29AE5A2A008FA959 /* CategoryTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BE11C29AE5A2A008FA959 /* CategoryTableViewCellScreen.swift */; };
 		FAC9724E29AE5347007D386E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9724D29AE5347007D386E /* AppDelegate.swift */; };
 		FAC9725029AE5347007D386E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9724F29AE5347007D386E /* SceneDelegate.swift */; };
@@ -44,7 +45,8 @@
 		C60712CA6C0DB4C737CFF616 /* Pods-AppChuckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckTests.release.xcconfig"; path = "Target Support Files/Pods-AppChuckTests/Pods-AppChuckTests.release.xcconfig"; sourceTree = "<group>"; };
 		FA4220C029AE93FE0061AE9C /* HomeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTests.swift; sourceTree = "<group>"; };
 		FA4220C229AEA0C60061AE9C /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
-		FA7BE11A29AE575A008FA959 /* ViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerScreen.swift; sourceTree = "<group>"; };
+		FA4220C429AEAF680061AE9C /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		FA7BE11A29AE575A008FA959 /* HomeViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerScreen.swift; sourceTree = "<group>"; };
 		FA7BE11C29AE5A2A008FA959 /* CategoryTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCellScreen.swift; sourceTree = "<group>"; };
 		FAC9724A29AE5347007D386E /* AppChuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC9724D29AE5347007D386E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				FA4220C029AE93FE0061AE9C /* HomeServiceTests.swift */,
 				FA4220C229AEA0C60061AE9C /* HomeViewModelTests.swift */,
+				FA4220C429AEAF680061AE9C /* HomeViewControllerTests.swift */,
 			);
 			path = AppChuckTests;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC9725129AE5347007D386E /* HomeViewController.swift */,
-				FA7BE11A29AE575A008FA959 /* ViewControllerScreen.swift */,
+				FA7BE11A29AE575A008FA959 /* HomeViewControllerScreen.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -352,7 +355,7 @@
 				FAFA5ECD29AE55C300DF14BE /* HomeService.swift in Sources */,
 				FAFA5ECB29AE55AC00DF14BE /* CategoryTableViewCell.swift in Sources */,
 				FAC9725229AE5347007D386E /* HomeViewController.swift in Sources */,
-				FA7BE11B29AE575A008FA959 /* ViewControllerScreen.swift in Sources */,
+				FA7BE11B29AE575A008FA959 /* HomeViewControllerScreen.swift in Sources */,
 				FAC9724E29AE5347007D386E /* AppDelegate.swift in Sources */,
 				FAC9725029AE5347007D386E /* SceneDelegate.swift in Sources */,
 				FAFA5EC929AE558C00DF14BE /* HomeViewModel.swift in Sources */,
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4220C129AE93FE0061AE9C /* HomeServiceTests.swift in Sources */,
+				FA4220C529AEAF680061AE9C /* HomeViewControllerTests.swift in Sources */,
 				FA4220C329AEA0C60061AE9C /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
