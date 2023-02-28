@@ -9,21 +9,32 @@ import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
+    static let identifier: String = "CategoryTableViewCell"
     
-    static let identifier: String = String(describing: CategoryTableViewCell.self)
+    var screen: CategoryTableViewCellScreen = CategoryTableViewCellScreen()
     
-    static func nib() -> UINib {
-        return UINib(nibName: identifier, bundle: nil)
-    }
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        configScreen()
+     }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+     required init?(coder aDecoder: NSCoder) {
+       super.init(coder: aDecoder)
+    }
+   
+    public func configScreen() {
+        contentView.addSubview(screen)
+        screen.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            screen.topAnchor.constraint(equalTo: contentView.topAnchor),
+            screen.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            screen.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            screen.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+        ])
     }
     
     public func setupCell(data: String){
-        self.titleLabel.text = data
+        screen.titleLabel.text = data
     }
     
 }

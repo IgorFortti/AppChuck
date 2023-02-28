@@ -9,16 +9,18 @@ import UIKit
 
 class ViewControllerScreen: UIView {
     
-        lazy var tableView: UITableView = {
+    lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.separatorStyle = .none
-//        TO DO: REGISTER
+        tableView.separatorStyle = .singleLine
+        tableView.separatorInset = .zero
+        tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: CategoryTableViewCell.identifier)
         return tableView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .white
         addElements()
         configConstraints()
     }
@@ -38,10 +40,10 @@ class ViewControllerScreen: UIView {
     
     func configConstraints() {
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-            tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 }

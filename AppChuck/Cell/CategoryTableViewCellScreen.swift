@@ -8,13 +8,35 @@
 import UIKit
 
 class CategoryTableViewCellScreen: UIView {
+    
+    lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        label.textColor = .black
+        label.textAlignment = .left
+        label.backgroundColor = .clear
+        return label
+    }()
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addElements()
+        configContraints()
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func addElements() {
+        addSubview(titleLabel)
+    }
+    
+    func configContraints() {
+        NSLayoutConstraint.activate([
+            titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
+        ])
+    }
 }

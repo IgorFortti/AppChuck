@@ -28,7 +28,7 @@ class HomeViewModel {
     
     public func fetchRequest() {
         service.getHome { [weak self] result in
-            guard let self else { return }
+            guard let self = self else { return }
             switch result {
             case .success(let success):
                 self.categoryList = success

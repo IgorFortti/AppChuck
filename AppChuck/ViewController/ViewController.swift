@@ -12,10 +12,13 @@ class ViewController: UIViewController {
     var screen: ViewControllerScreen?
     var viewModel: HomeViewModel = HomeViewModel(service: HomeService())
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func loadView() {
         screen = ViewControllerScreen()
         view = screen
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         viewModel.delegate(delegate: self)
         viewModel.fetchRequest()
     }
@@ -44,6 +47,10 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.identifier, for: indexPath) as? CategoryTableViewCell
         cell?.setupCell(data: viewModel.loadCurrentCategory(indexPath: indexPath))
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        40
     }
     
 }
