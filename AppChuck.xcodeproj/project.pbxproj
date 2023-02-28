@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231977C2A7F63054F78C0612 /* Pods_AppChuck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7539120C901819C86F27D142 /* Pods_AppChuck.framework */; };
+		78AA017FF18281D9FCEC2688 /* Pods_AppChuckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE941C1F67CE1104B11BFE6 /* Pods_AppChuckTests.framework */; };
 		FAC9724E29AE5347007D386E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9724D29AE5347007D386E /* AppDelegate.swift */; };
 		FAC9725029AE5347007D386E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9724F29AE5347007D386E /* SceneDelegate.swift */; };
 		FAC9725229AE5347007D386E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9725129AE5347007D386E /* ViewController.swift */; };
@@ -14,8 +16,9 @@
 		FAC9725729AE534B007D386E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC9725629AE534B007D386E /* Assets.xcassets */; };
 		FAC9725A29AE534B007D386E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC9725829AE534B007D386E /* LaunchScreen.storyboard */; };
 		FAC9726529AE534C007D386E /* AppChuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9726429AE534C007D386E /* AppChuckTests.swift */; };
-		FAC9726F29AE534C007D386E /* AppChuckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9726E29AE534C007D386E /* AppChuckUITests.swift */; };
-		FAC9727129AE534C007D386E /* AppChuckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9727029AE534C007D386E /* AppChuckUITestsLaunchTests.swift */; };
+		FAFA5EC929AE558C00DF14BE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA5EC829AE558C00DF14BE /* HomeViewModel.swift */; };
+		FAFA5ECB29AE55AC00DF14BE /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA5ECA29AE55AC00DF14BE /* CategoryTableViewCell.swift */; };
+		FAFA5ECD29AE55C300DF14BE /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA5ECC29AE55C300DF14BE /* HomeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,17 @@
 			remoteGlobalIDString = FAC9724929AE5347007D386E;
 			remoteInfo = AppChuck;
 		};
-		FAC9726B29AE534C007D386E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAC9724229AE5347007D386E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAC9724929AE5347007D386E;
-			remoteInfo = AppChuck;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EA6ED43DF8089001DA62899 /* Pods-AppChuck-AppChuckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuck-AppChuckUITests.release.xcconfig"; path = "Target Support Files/Pods-AppChuck-AppChuckUITests/Pods-AppChuck-AppChuckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		247A53B2B22066DF9F6A42F3 /* Pods-AppChuckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckTests.debug.xcconfig"; path = "Target Support Files/Pods-AppChuckTests/Pods-AppChuckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C64C35D2711AC0259B1E86B /* Pods-AppChuck-AppChuckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuck-AppChuckUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppChuck-AppChuckUITests/Pods-AppChuck-AppChuckUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		62525952951D6770B29DC98A /* Pods_AppChuck_AppChuckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppChuck_AppChuckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7539120C901819C86F27D142 /* Pods_AppChuck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppChuck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB037380FD491B7D80D8DABF /* Pods-AppChuck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuck.debug.xcconfig"; path = "Target Support Files/Pods-AppChuck/Pods-AppChuck.debug.xcconfig"; sourceTree = "<group>"; };
+		C32BEECDE9B012A0784F13E5 /* Pods-AppChuck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuck.release.xcconfig"; path = "Target Support Files/Pods-AppChuck/Pods-AppChuck.release.xcconfig"; sourceTree = "<group>"; };
+		C60712CA6C0DB4C737CFF616 /* Pods-AppChuckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckTests.release.xcconfig"; path = "Target Support Files/Pods-AppChuckTests/Pods-AppChuckTests.release.xcconfig"; sourceTree = "<group>"; };
 		FAC9724A29AE5347007D386E /* AppChuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC9724D29AE5347007D386E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC9724F29AE5347007D386E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,9 +50,10 @@
 		FAC9725B29AE534B007D386E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC9726029AE534C007D386E /* AppChuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppChuckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC9726429AE534C007D386E /* AppChuckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChuckTests.swift; sourceTree = "<group>"; };
-		FAC9726A29AE534C007D386E /* AppChuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppChuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC9726E29AE534C007D386E /* AppChuckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChuckUITests.swift; sourceTree = "<group>"; };
-		FAC9727029AE534C007D386E /* AppChuckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChuckUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAFA5EC829AE558C00DF14BE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FAFA5ECA29AE55AC00DF14BE /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		FAFA5ECC29AE55C300DF14BE /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		FEE941C1F67CE1104B11BFE6 /* Pods_AppChuckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppChuckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231977C2A7F63054F78C0612 /* Pods_AppChuck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,26 +69,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC9726729AE534C007D386E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				78AA017FF18281D9FCEC2688 /* Pods_AppChuckTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BBD3774D096F1EC4BB89CE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB037380FD491B7D80D8DABF /* Pods-AppChuck.debug.xcconfig */,
+				C32BEECDE9B012A0784F13E5 /* Pods-AppChuck.release.xcconfig */,
+				4C64C35D2711AC0259B1E86B /* Pods-AppChuck-AppChuckUITests.debug.xcconfig */,
+				0EA6ED43DF8089001DA62899 /* Pods-AppChuck-AppChuckUITests.release.xcconfig */,
+				247A53B2B22066DF9F6A42F3 /* Pods-AppChuckTests.debug.xcconfig */,
+				C60712CA6C0DB4C737CFF616 /* Pods-AppChuckTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2BA6D17BD4784D19F7E9EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7539120C901819C86F27D142 /* Pods_AppChuck.framework */,
+				62525952951D6770B29DC98A /* Pods_AppChuck_AppChuckUITests.framework */,
+				FEE941C1F67CE1104B11BFE6 /* Pods_AppChuckTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAC9724129AE5347007D386E = {
 			isa = PBXGroup;
 			children = (
 				FAC9724C29AE5347007D386E /* AppChuck */,
 				FAC9726329AE534C007D386E /* AppChuckTests */,
-				FAC9726D29AE534C007D386E /* AppChuckUITests */,
 				FAC9724B29AE5347007D386E /* Products */,
+				9BBD3774D096F1EC4BB89CE7 /* Pods */,
+				E2BA6D17BD4784D19F7E9EB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +115,6 @@
 			children = (
 				FAC9724A29AE5347007D386E /* AppChuck.app */,
 				FAC9726029AE534C007D386E /* AppChuckTests.xctest */,
-				FAC9726A29AE534C007D386E /* AppChuckUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,9 +122,12 @@
 		FAC9724C29AE5347007D386E /* AppChuck */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA5EC529AE552D00DF14BE /* ViewModel */,
+				FAFA5EC429AE551F00DF14BE /* ViewController */,
+				FAFA5EC629AE553800DF14BE /* Cell */,
+				FAFA5EC729AE553F00DF14BE /* Service */,
 				FAC9724D29AE5347007D386E /* AppDelegate.swift */,
 				FAC9724F29AE5347007D386E /* SceneDelegate.swift */,
-				FAC9725129AE5347007D386E /* ViewController.swift */,
 				FAC9725329AE5347007D386E /* Main.storyboard */,
 				FAC9725629AE534B007D386E /* Assets.xcassets */,
 				FAC9725829AE534B007D386E /* LaunchScreen.storyboard */,
@@ -118,13 +144,36 @@
 			path = AppChuckTests;
 			sourceTree = "<group>";
 		};
-		FAC9726D29AE534C007D386E /* AppChuckUITests */ = {
+		FAFA5EC429AE551F00DF14BE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FAC9726E29AE534C007D386E /* AppChuckUITests.swift */,
-				FAC9727029AE534C007D386E /* AppChuckUITestsLaunchTests.swift */,
+				FAC9725129AE5347007D386E /* ViewController.swift */,
 			);
-			path = AppChuckUITests;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAFA5EC529AE552D00DF14BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA5EC829AE558C00DF14BE /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAFA5EC629AE553800DF14BE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA5ECA29AE55AC00DF14BE /* CategoryTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FAFA5EC729AE553F00DF14BE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA5ECC29AE55C300DF14BE /* HomeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC9727429AE534C007D386E /* Build configuration list for PBXNativeTarget "AppChuck" */;
 			buildPhases = (
+				865C9514C9797542B8FCA806 /* [CP] Check Pods Manifest.lock */,
 				FAC9724629AE5347007D386E /* Sources */,
 				FAC9724729AE5347007D386E /* Frameworks */,
 				FAC9724829AE5347007D386E /* Resources */,
+				853C8B93264287AEEF88EA9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC9727729AE534C007D386E /* Build configuration list for PBXNativeTarget "AppChuckTests" */;
 			buildPhases = (
+				0C22B875D792F639145DE055 /* [CP] Check Pods Manifest.lock */,
 				FAC9725C29AE534C007D386E /* Sources */,
 				FAC9725D29AE534C007D386E /* Frameworks */,
 				FAC9725E29AE534C007D386E /* Resources */,
@@ -164,24 +216,6 @@
 			productName = AppChuckTests;
 			productReference = FAC9726029AE534C007D386E /* AppChuckTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FAC9726929AE534C007D386E /* AppChuckUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAC9727A29AE534C007D386E /* Build configuration list for PBXNativeTarget "AppChuckUITests" */;
-			buildPhases = (
-				FAC9726629AE534C007D386E /* Sources */,
-				FAC9726729AE534C007D386E /* Frameworks */,
-				FAC9726829AE534C007D386E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAC9726C29AE534C007D386E /* PBXTargetDependency */,
-			);
-			name = AppChuckUITests;
-			productName = AppChuckUITests;
-			productReference = FAC9726A29AE534C007D386E /* AppChuckUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,10 +231,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					FAC9725F29AE534C007D386E = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = FAC9724929AE5347007D386E;
-					};
-					FAC9726929AE534C007D386E = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = FAC9724929AE5347007D386E;
 					};
@@ -221,7 +251,6 @@
 			targets = (
 				FAC9724929AE5347007D386E /* AppChuck */,
 				FAC9725F29AE534C007D386E /* AppChuckTests */,
-				FAC9726929AE534C007D386E /* AppChuckUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,23 +273,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAC9726829AE534C007D386E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C22B875D792F639145DE055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppChuckTests-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		853C8B93264287AEEF88EA9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppChuck/Pods-AppChuck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppChuck/Pods-AppChuck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppChuck/Pods-AppChuck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		865C9514C9797542B8FCA806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppChuck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAC9724629AE5347007D386E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFA5ECD29AE55C300DF14BE /* HomeService.swift in Sources */,
+				FAFA5ECB29AE55AC00DF14BE /* CategoryTableViewCell.swift in Sources */,
 				FAC9725229AE5347007D386E /* ViewController.swift in Sources */,
 				FAC9724E29AE5347007D386E /* AppDelegate.swift in Sources */,
 				FAC9725029AE5347007D386E /* SceneDelegate.swift in Sources */,
+				FAFA5EC929AE558C00DF14BE /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +361,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAC9726629AE534C007D386E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAC9727129AE534C007D386E /* AppChuckUITestsLaunchTests.swift in Sources */,
-				FAC9726F29AE534C007D386E /* AppChuckUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +368,6 @@
 			isa = PBXTargetDependency;
 			target = FAC9724929AE5347007D386E /* AppChuck */;
 			targetProxy = FAC9726129AE534C007D386E /* PBXContainerItemProxy */;
-		};
-		FAC9726C29AE534C007D386E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAC9724929AE5347007D386E /* AppChuck */;
-			targetProxy = FAC9726B29AE534C007D386E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +509,7 @@
 		};
 		FAC9727529AE534C007D386E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB037380FD491B7D80D8DABF /* Pods-AppChuck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +538,7 @@
 		};
 		FAC9727629AE534C007D386E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32BEECDE9B012A0784F13E5 /* Pods-AppChuck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +567,7 @@
 		};
 		FAC9727829AE534C007D386E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247A53B2B22066DF9F6A42F3 /* Pods-AppChuckTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +588,7 @@
 		};
 		FAC9727929AE534C007D386E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60712CA6C0DB4C737CFF616 /* Pods-AppChuckTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -525,42 +604,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppChuck.app/AppChuck";
-			};
-			name = Release;
-		};
-		FAC9727B29AE534C007D386E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FR8BBNFFSR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.igorfortti.AppChuckUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AppChuck;
-			};
-			name = Debug;
-		};
-		FAC9727C29AE534C007D386E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FR8BBNFFSR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.igorfortti.AppChuckUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AppChuck;
 			};
 			name = Release;
 		};
@@ -590,15 +633,6 @@
 			buildConfigurations = (
 				FAC9727829AE534C007D386E /* Debug */,
 				FAC9727929AE534C007D386E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAC9727A29AE534C007D386E /* Build configuration list for PBXNativeTarget "AppChuckUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAC9727B29AE534C007D386E /* Debug */,
-				FAC9727C29AE534C007D386E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
