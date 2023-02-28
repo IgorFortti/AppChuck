@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		231977C2A7F63054F78C0612 /* Pods_AppChuck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7539120C901819C86F27D142 /* Pods_AppChuck.framework */; };
 		78AA017FF18281D9FCEC2688 /* Pods_AppChuckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE941C1F67CE1104B11BFE6 /* Pods_AppChuckTests.framework */; };
+		FA4220C129AE93FE0061AE9C /* HomeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4220C029AE93FE0061AE9C /* HomeServiceTests.swift */; };
 		FA7BE11B29AE575A008FA959 /* ViewControllerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BE11A29AE575A008FA959 /* ViewControllerScreen.swift */; };
 		FA7BE11D29AE5A2A008FA959 /* CategoryTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BE11C29AE5A2A008FA959 /* CategoryTableViewCellScreen.swift */; };
 		FAC9724E29AE5347007D386E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9724D29AE5347007D386E /* AppDelegate.swift */; };
@@ -16,7 +17,6 @@
 		FAC9725229AE5347007D386E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9725129AE5347007D386E /* ViewController.swift */; };
 		FAC9725729AE534B007D386E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC9725629AE534B007D386E /* Assets.xcassets */; };
 		FAC9725A29AE534B007D386E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC9725829AE534B007D386E /* LaunchScreen.storyboard */; };
-		FAC9726529AE534C007D386E /* AppChuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9726429AE534C007D386E /* AppChuckTests.swift */; };
 		FAFA5EC929AE558C00DF14BE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA5EC829AE558C00DF14BE /* HomeViewModel.swift */; };
 		FAFA5ECB29AE55AC00DF14BE /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA5ECA29AE55AC00DF14BE /* CategoryTableViewCell.swift */; };
 		FAFA5ECD29AE55C300DF14BE /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA5ECC29AE55C300DF14BE /* HomeService.swift */; };
@@ -41,6 +41,7 @@
 		AB037380FD491B7D80D8DABF /* Pods-AppChuck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuck.debug.xcconfig"; path = "Target Support Files/Pods-AppChuck/Pods-AppChuck.debug.xcconfig"; sourceTree = "<group>"; };
 		C32BEECDE9B012A0784F13E5 /* Pods-AppChuck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuck.release.xcconfig"; path = "Target Support Files/Pods-AppChuck/Pods-AppChuck.release.xcconfig"; sourceTree = "<group>"; };
 		C60712CA6C0DB4C737CFF616 /* Pods-AppChuckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckTests.release.xcconfig"; path = "Target Support Files/Pods-AppChuckTests/Pods-AppChuckTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA4220C029AE93FE0061AE9C /* HomeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTests.swift; sourceTree = "<group>"; };
 		FA7BE11A29AE575A008FA959 /* ViewControllerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerScreen.swift; sourceTree = "<group>"; };
 		FA7BE11C29AE5A2A008FA959 /* CategoryTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCellScreen.swift; sourceTree = "<group>"; };
 		FAC9724A29AE5347007D386E /* AppChuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +52,6 @@
 		FAC9725929AE534B007D386E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC9725B29AE534B007D386E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC9726029AE534C007D386E /* AppChuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppChuckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC9726429AE534C007D386E /* AppChuckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChuckTests.swift; sourceTree = "<group>"; };
 		FAFA5EC829AE558C00DF14BE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FAFA5ECA29AE55AC00DF14BE /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		FAFA5ECC29AE55C300DF14BE /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
@@ -124,10 +124,10 @@
 		FAC9724C29AE5347007D386E /* AppChuck */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA5EC729AE553F00DF14BE /* Service */,
 				FAFA5EC529AE552D00DF14BE /* ViewModel */,
 				FAFA5EC429AE551F00DF14BE /* ViewController */,
-				FAFA5EC629AE553800DF14BE /* Cell */,
-				FAFA5EC729AE553F00DF14BE /* Service */,
+				FAFA5EC629AE553800DF14BE /* Cells */,
 				FAC9724D29AE5347007D386E /* AppDelegate.swift */,
 				FAC9724F29AE5347007D386E /* SceneDelegate.swift */,
 				FAC9725629AE534B007D386E /* Assets.xcassets */,
@@ -140,7 +140,7 @@
 		FAC9726329AE534C007D386E /* AppChuckTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAC9726429AE534C007D386E /* AppChuckTests.swift */,
+				FA4220C029AE93FE0061AE9C /* HomeServiceTests.swift */,
 			);
 			path = AppChuckTests;
 			sourceTree = "<group>";
@@ -162,13 +162,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		FAFA5EC629AE553800DF14BE /* Cell */ = {
+		FAFA5EC629AE553800DF14BE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				FAFA5ECA29AE55AC00DF14BE /* CategoryTableViewCell.swift */,
 				FA7BE11C29AE5A2A008FA959 /* CategoryTableViewCellScreen.swift */,
 			);
-			path = Cell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FAFA5EC729AE553F00DF14BE /* Service */ = {
@@ -361,7 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC9726529AE534C007D386E /* AppChuckTests.swift in Sources */,
+				FA4220C129AE93FE0061AE9C /* HomeServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

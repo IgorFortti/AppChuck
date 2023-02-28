@@ -36,5 +36,4 @@ class CategoryTableViewCell: UITableViewCell {
     public func setupCell(data: String){
         screen.titleLabel.text = data
     }
-    
 }
