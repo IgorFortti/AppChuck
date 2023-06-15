@@ -25,7 +25,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Compatibility.h"
+#import <Compatibility.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
